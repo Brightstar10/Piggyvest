@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* global */
+
+
+
+.container{
+    width: 94%;
+    margin: auto;
+}
+
+#showcase {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin: 3rem;
+    justify-content: space-between; 
+    background-image: url("./img/simple-light-dodger-.jpg");
+    background-repeat: no-repeat ;
+    border-bottom: #000 1px snow;
+    background-size: cover;
+    height: 80vh;
+    border-radius: 7px;
+    width: 87%;
+    margin-top: 150px;
+    
+}
+
+/* header */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: white;
+    position: fixed;
+    z-index: 2;
+
+}
+
+header img{
+    width: 180px;
+}
+
+nav {
+
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    padding-right: 2rem;
+    box-sizing: border-box;
+    justify-items: space-around;
+
+}
+
+nav li{
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+
+nav a{
+text-decoration: none;
+color: #000;
+}
+
+ .create{
+    background-color: blue;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 7px;
+    border-bottom-left-radius: 0px;
+}
+
+
+
+
+/* left */
+
+.left{
+    margin-left: 50px;
+    background-size: cover;
+}
+
+.left h1{
+    font-size: 3rem;
+    color:blue;
+    margin: 2rem;
+}
+
+.left p{
+    color: black;
+    margin: 20px;
+} 
+
+
+.left p2{
+    color: green;
+    font-size: 12px;
+    padding-left: 50px;
+
+}
+
+.left .create {
+    text-decoration: none;
+    margin: 30px 20px;
+
+}
+
+.left ul {
+    margin-top: 50px;
+}
+
+.left li {
+    list-style: none;
+}
+
+.left .image{
+    display: flex;
+    margin: 50px 20px;
+}
+
+.left .image img{
+    width: 150px;
+
+}
+
+/* right */
+.right img{
+    height: 90vh;
+    border-radius: 7px;  
+}
+
+@media  (max-width: 768px){
+    .right{
+        display: none;
+    }
+
+    .left{
+        margin: auto;
+        text-align: center;
+    
+    }
+    .left .image {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav{
+        margin-top: 50px;
+        width: 100%;
+    }
+
+}
